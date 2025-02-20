@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/1cca1e9b03.js" crossorigin="anonymous"></script>
+    <title>Omar</title>
+    <link rel="shortcut icon" type="x-icon" href="medias/img/Logo.png">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="medias/img/Logo.png" class="logo" alt="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Accueil</a></li>
+                    <li><a href="#about">À propos de moi</a></li>
+                    <li><a href="#services">Portfolio</a></li>
+                    <li><a href="#portfolio">Compétences</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>                
+            </nav>
+            <div class="header-text">
+                <p>Ingénieur Pédagogique Multimodal</p>
+                <h1>Salut, je suis <span>Omar</span><br>à l'écoute du marché.</h1>
+            </div>
+        </div>
+    </div>
+    <!--About-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="medias/img/Profil-2.png" alt="user">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">À propos de moi</h1>
+                    <p>Fraîchement diplômé d'un Master 2 en Ingénierie Pédagogique Multimodale de l'Université de Lille. 
+                        Cette formation m'a permis d'acquérir une expertise solide dans la conception et le déploiement 
+                        de dispositifs d'apprentissage innovants, en particulier dans le domaine du digital learning.
+                        Créatif, pédagogue et doté d'un esprit de synthèse, je suis capable d'analyser les besoins en formation, 
+                        de concevoir des parcours sur-mesure et de créer des ressources pédagogiques de qualité. 
+                        Mon désir constant d'apprentissage et d'amélioration me pousse à m'investir pleinement dans chaque projet, 
+                        cherchant toujours à dépasser les attentes.
+                        Mon objectif est de mettre à profit mes compétences en ingénierie pédagogique multimodale pour contribuer 
+                        à des projets qui transforment et améliorent l'expérience d'apprentissage. Je suis prêt à relever de nouveaux 
+                        défis et à apporter ma contribution dans une équipe dynamique et innovante.
+                    </p>
+                         <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Expérience professionnelle</p>
+                            <p class="tab-links" onclick="opentab('experience')">Formation</p>
+                            <p class="tab-links" onclick="opentab('education')">Stage</p>
+                         </div>
+                         <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Septembre 2020 - Août 2023</span><br><b>Enseignant :</b> Ministère de l'Éducation nationale, du Préscolaire et des Sports</li>
+                                <li><span>Janvier 2019 - Décembre 2019</span><br><b>Leader sport :</b> Décathlon</li>
+                                <li><span>Juillet 2016 - Août 2017</span><br><b>Marchandiseur :</b> Frigo Général Foods Maroc « Alia Group Industry »</li>
+                            </ul>
+                         </div>
+                         <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Septembre 2023 - Septembre 2024</span><br><b>Master 2 :</b> Ingénierie Pédagogique Multimodale</li>
+                                <li><span>Janvier 2020 - Juin 2020</span><br><b>Formation :</b> Éducation Physique et Sportive</li>
+                                <li><span>Septembre 2018 - Juin 2020</span><br><b>Master Spécialisé :</b> Métiers de la Formation et de l'Encadrement</li>
+                                <li><span>Septembre 2017 - Juin 2018</span><br><b>Licence Professionnelle :</b> Enseignement</li>
+                                <li><span>Septembre 2014 - Juin 2016</span><br><b>Diplôme Technicien Spécialisé :</b> Mécatronique</li>
+                                <li><span>Septembre 2013 - Juin 2014</span><br><b>BAC+1 :</b> 1 ère année Sciences de la Matière Physique et Chimie</li>
+                                <li><span>Juin 2013</span><br><b>Baccalauréat :</b> Sciences Expérimentales, Option Sciences Physiques</li>                                
+                            </ul>
+                         </div>
+                         <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>Avril 2024 - Septembre 2024</span><br><b>Concepteur pédagogique :</b> METRO France, Maison de la formation, Nanterre France</li>
+                                <li><span>Janvier 2020 - Avril 2020</span><br><b>Formateur :</b> Centre Régional des Métiers de l'Éducation et de la Formation, Casablanca Maroc</li>
+                                <li><span>Février 2018 - Mai 2018</span><br><b>Enseignant :</b> Collège ES-SAMARA, Settat Maroc</li>
+                                <li><span>Juin 2017 - Juil 2017</span><br><b>Technicien :</b> Général Mécanique Hydraulique DAMANE, Safi Maroc</li>
+                                <li><span>Février 2016 - Mars 2016</span><br><b>Technicien :</b> Royal Air Maroc, Nouacer Maroc</li>
+                            </ul>
+                         </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Services-->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Portfolio</h1> 
+            <div class="services-list">
+                <div>
+                    <!-- <i class="fa-solid fa-code"></i> -->
+                    <h2>Langues</h2>
+                    <ul class="star">
+                        <li>Français : <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></li>
+                        <li>Anglais : <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></li>
+                        <li>Arabe : <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></li>                        
+                    </ul>                        
+                </div>
+                <div>
+                    <!-- <i class="fa-solid fa-crop"></i> -->
+                    <h2>Centres d'intérêt</h2>
+                    <ul>
+                        <li><i class="fa-solid fa-gamepad"></i> Jeux vidéo </li>
+                        <li><i class="fa-solid fa-person-swimming"></i> Natation</li>
+                        <li><i class="fa-solid fa-futbol"></i> Football</li>
+                        <li><i class="fa-solid fa-basketball"></i> Basketball</li>
+                        <li><i class="fa-solid fa-person-running"></i> Course</li>                        
+                    </ul>                        
+                </div>
+                <div>
+                    <!-- <i class="fa-brands fa-app-store"></i> -->
+                    <h2>Mes réalisations</h2>
+                    <ul>
+                        <li>Programmation : <a href="https://ho-learning.000webhostapp.com/Poupoudre/index.html">Site 1,</a>
+                                            <a href="https://ho-learning.000webhostapp.com/TP%20HP/index.html">Site 2,</a>
+                                            <a href="https://ho-learning.000webhostapp.com/TP_PHP_Site%20_Dynamique/index.php">Site 3</a>                        
+                        </li>
+                        <li>Traitement image, son, vidéo : <a href="https://youtu.be/R2O2t2-8Aw8">Vid 1,</a>
+                                                            <a href="https://youtu.be/71o_Fp4E5kI"> Vid 2</a>
+                        </li>
+                        <li>E-learning : <a href="Storyline/E-learning 1/course_de_duree.html">E1,</a>
+                                         <a href="Storyline/E-learning 2/Mario.html">E2</a>
+                        </li>
+                        <li>METRO : <a href="https://youtu.be/1BWTuz4tzqk">Vid </a>                           
+                        </li>
+                        </li>
+                        <li>Genially : <a href="https://view.genially.com/65cde7756d35bd00147fc9c6/interactive-content-plateau-de-jeu">G1 </a>                           
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--portfolio-->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Compétences</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="medias/img/soft-skills.jpg" alt="work1">
+                    <div class="layer">
+                        <h3>Transversales</h3>
+                        <ul>
+                            <li>Créatif</li>
+                            <li>Curieux</li>
+                            <li>Motiver</li>
+                            <li>Pédagogue</li>
+                            <li>Esprit d'équipe</li>
+                            <li>Capacité d'apprendre</li>
+                            <li>Rigoureux, Autonome</li>
+                            <li>Capacité d'adaptation</li>
+                            <li>Doté du sens de l'éthique</li>
+                            <li>Esprit d'analyse et de synthèse</li>
+                        </ul> 
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="medias/img/pedagogie.jpg" alt="work2">
+                    <div class="layer">
+                        <h3>Pédagogiques</h3>
+                        <ul>
+                            <li>Ingénierie de formation / pédagogique</li>
+                            <li>Théories et principes d'apprentissage</li>
+                            <li>Concevoir des programmes d'apprentissage</li>
+                            <li>Concevoir un dispositif de formation</li>
+                            <li>Créer des supports pédagogiques</li>
+                            <li>Création du contenu numérique</li>
+                            <li>Gestion du projet pédagogique</li>
+                            <li>Gestion des plateformes d'apprentissage en ligne</li>
+                        </ul>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="medias/img/work-1.png" alt="work3">
+                    <div class="layer">
+                        <h3>Technologiques</h3>
+                        <ul>
+                            <li>Office 365, Canva</li>
+                            <li>Articulate, Captivate, Scenari</li>
+                            <li>Photoshop, Illustrator, After Effect</li>
+                            <li>Camtasia, Filmora, Premiere Pro</li>
+                            <li>Vyond</li>
+                            <li>HTML, CSS, JS, PHP</li>
+                        </ul>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!--logiciel-->
+    <section class="logos-section">
+        <h1>Logiciels que je maîtrise</h1>
+        <div class="logos-container">
+            <div class="logo-item"><img src="medias/img/Logiciels/Canva.png" alt="Canva"></div>
+            <div class="logo-item"><img src="medias/img/Logiciels/office365.png" alt="Office 365"></div>
+            <div class="logo-item"><img src="medias/img/Logiciels/Articulate.png" alt="Articulate"></div>
+            <div class="logo-item"><img src="medias/img/Logiciels/Storyline.png" alt="Storyline"></div>
+            <div class="logo-item"><img src="medias/img/Logiciels/Rise.png" alt="Rise"></div>
+            <div class="logo-item"><img src="medias/img/Logiciels/Captivate.png" alt="Captivate"></div>
+            <div class="logo-item"><img src="medias/img/Logiciels/Vyond.png" alt="Vyond"></div>
+            <div class="logo-item"><img src="medias/img/Logiciels/genially.png" alt="Genially"></div>
+            <div class="logo-item"><img src="medias/img/Logiciels/VTS editor.png" alt="VTS editor"></div>
+            <div class="logo-item"><img src="medias/img/Logiciels/Photoshop.png" alt="Photoshop"></div>
+            <div class="logo-item"><img src="medias/img/Logiciels/Illustrator.png" alt="Illustrator"></div>
+            <div class="logo-item"><img src="medias/img/Logiciels/After effect.png" alt="Afetr Effect"></div>
+            <div class="logo-item"><img src="medias/img/Logiciels/Premiere Pro.png" alt="Premiere Pro"></div>
+            <div class="logo-item"><img src="medias/img/Logiciels/Audition.png" alt="Audition"></div>
+            <div class="logo-item"><img src="medias/img/Logiciels/murf.png" alt="Murf"></div>
+            <div class="logo-item"><img src="medias/img/Logiciels/Camtasia.png" alt="Camtasia"></div>
+            <div class="logo-item"><img src="medias/img/Logiciels/Filmora.png" alt="Filmora"></div>
+            <div class="logo-item"><img src="medias/img/Logiciels/HTML.png" alt="HTML"></div>
+            <div class="logo-item"><img src="medias/img/Logiciels/CSS.png" alt="CSS"></div>
+        </div>
+    </section>
+    <!--contact-->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-envelope"></i> OmarHbilou@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 07 45 41 13 14</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/omar-hbilou-222937178/"><i class="fa-brands fa-linkedin"></i></a> 
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>                                               
+                    </div>
+                    <div class="buttons-container">
+                        <a href="medias/img/CV_OMAR HBILOU.pdf" download class="btn">Download C.V.</a>
+                        <a href="medias/img/Lettre_OMAR HBILOU.pdf" download class="btn">Download Lettre</a>
+                    </div>                    
+                </div>
+                <div class="contact-right"> 
+                    <form id="email-form" onsubmit="sendEmail(event)">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                        <input type="email" id="email" placeholder="Your Email" required>
+                        <textarea id="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright <i class="fa-regular fa-copyright"></i> Omar.</p>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks){
+                tablink.classList.remove("active-link");
+                }
+            for (tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+    </script>
+    <script>
+        function sendEmail(event) {
+            event.preventDefault(); // Empêche le rechargement de la page
+    
+            // Récupère les valeurs des champs
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const message = document.getElementById("message").value;
+    
+            // Crée le contenu pour le mailto
+            const mailtoLink = `mailto:omarhbilou@gmail.com?subject=Message from ${encodeURIComponent(name)}&body=Name: ${encodeURIComponent(name)}%0AEmail: ${encodeURIComponent(email)}%0A%0A${encodeURIComponent(message)}`;
+    
+            // Ouvre la boîte mail avec le client par défaut
+            window.location.href = mailtoLink;
+        }
+    </script> 
+</body>
+</html>
